@@ -1,0 +1,318 @@
+{
+  "created_at": "Tue Jan 01 16:44:13 +0000 2019",
+  "id": 1080142661485584386,
+  "id_str": "1080142661485584386",
+  "text": "@heybanco Es increíble que realice un retiro y el cajero no me dio el dinero , luego retire en otro cajero y tampoc… https://t.co/D9emfdQ22S",
+  "display_text_range": [
+    0,
+    140
+  ],
+  "source": "<a href='http://twitter.com/download/iphone' rel='nofollow'>Twitter for iPhone</a>",
+  "truncated": true,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": 930934081466060800,
+  "in_reply_to_user_id_str": "930934081466060800",
+  "in_reply_to_screen_name": "heybanco",
+  "user": {
+    "id": 143967355,
+    "id_str": "143967355",
+    "name": "FILI",
+    "screen_name": "FILIYY",
+    "location": "ÜT: 25.786879,-80.134133",
+    "url": "http://bit.ly/dFFMow",
+    "description": "Twitter Oficial FILIYY",
+    "translator_type": "badged",
+    "protected": false,
+    "verified": false,
+    "followers_count": 5203,
+    "friends_count": 812,
+    "listed_count": 15,
+    "favourites_count": 3386,
+    "statuses_count": 6502,
+    "created_at": "Fri May 14 23:05:03 +0000 2010",
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": true,
+    "lang": "es",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "profile_background_color": "DD2E44",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": true,
+    "profile_link_color": "4A913C",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/722480797978996736/Oetx6uJt_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/722480797978996736/Oetx6uJt_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/143967355/1407189994",
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": null,
+    "follow_request_sent": null,
+    "notifications": null
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "is_quote_status": false,
+  "extended_tweet": {
+    "full_text": "@heybanco Es increíble que realice un retiro y el cajero no me dio el dinero , luego retire en otro cajero y tampoco me dio el dinero realicé una compra y no se aplica @banregio @CondusefMX @AtencionProfeco @Profeco https://t.co/GmRP661fWw",
+    "display_text_range": [
+      0,
+      215
+    ],
+    "entities": {
+      "hashtags": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "heybanco",
+          "name": "Hey Banco",
+          "id": 930934081466060800,
+          "id_str": "930934081466060800",
+          "indices": [
+            0,
+            9
+          ]
+        },
+        {
+          "screen_name": "banregio",
+          "name": "Banregio",
+          "id": 15914782,
+          "id_str": "15914782",
+          "indices": [
+            168,
+            177
+          ]
+        },
+        {
+          "screen_name": "CondusefMX",
+          "name": "CONDUSEF",
+          "id": 164783615,
+          "id_str": "164783615",
+          "indices": [
+            178,
+            189
+          ]
+        },
+        {
+          "screen_name": "AtencionProfeco",
+          "name": "Atención Profeco",
+          "id": 975260683918036992,
+          "id_str": "975260683918036992",
+          "indices": [
+            190,
+            206
+          ]
+        },
+        {
+          "screen_name": "Profeco",
+          "name": "Profeco",
+          "id": 20261685,
+          "id_str": "20261685",
+          "indices": [
+            207,
+            215
+          ]
+        }
+      ],
+      "symbols": [],
+      "media": [
+        {
+          "id": 1080142618749591552,
+          "id_str": "1080142618749591552",
+          "indices": [
+            216,
+            239
+          ],
+          "media_url": "http://pbs.twimg.com/media/Dv1v_SlUYAAcEIX.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/Dv1v_SlUYAAcEIX.jpg",
+          "url": "https://t.co/GmRP661fWw",
+          "display_url": "pic.twitter.com/GmRP661fWw",
+          "expanded_url": "https://twitter.com/FILIYY/status/1080142661485584386/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1012,
+              "h": 2048,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 336,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 593,
+              "h": 1200,
+              "resize": "fit"
+            }
+          }
+        },
+        {
+          "id": 1080142618728656896,
+          "id_str": "1080142618728656896",
+          "indices": [
+            216,
+            239
+          ],
+          "media_url": "http://pbs.twimg.com/media/Dv1v_SgU8AAFtLD.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/Dv1v_SgU8AAFtLD.jpg",
+          "url": "https://t.co/GmRP661fWw",
+          "display_url": "pic.twitter.com/GmRP661fWw",
+          "expanded_url": "https://twitter.com/FILIYY/status/1080142661485584386/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1012,
+              "h": 2048,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 336,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 593,
+              "h": 1200,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1080142618749591552,
+          "id_str": "1080142618749591552",
+          "indices": [
+            216,
+            239
+          ],
+          "media_url": "http://pbs.twimg.com/media/Dv1v_SlUYAAcEIX.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/Dv1v_SlUYAAcEIX.jpg",
+          "url": "https://t.co/GmRP661fWw",
+          "display_url": "pic.twitter.com/GmRP661fWw",
+          "expanded_url": "https://twitter.com/FILIYY/status/1080142661485584386/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1012,
+              "h": 2048,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 336,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 593,
+              "h": 1200,
+              "resize": "fit"
+            }
+          }
+        },
+        {
+          "id": 1080142618728656896,
+          "id_str": "1080142618728656896",
+          "indices": [
+            216,
+            239
+          ],
+          "media_url": "http://pbs.twimg.com/media/Dv1v_SgU8AAFtLD.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/Dv1v_SgU8AAFtLD.jpg",
+          "url": "https://t.co/GmRP661fWw",
+          "display_url": "pic.twitter.com/GmRP661fWw",
+          "expanded_url": "https://twitter.com/FILIYY/status/1080142661485584386/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1012,
+              "h": 2048,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 336,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 593,
+              "h": 1200,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "quote_count": 0,
+  "reply_count": 1,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "entities": {
+    "hashtags": [],
+    "urls": [
+      {
+        "url": "https://t.co/D9emfdQ22S",
+        "expanded_url": "https://twitter.com/i/web/status/1080142661485584386",
+        "display_url": "twitter.com/i/web/status/1…",
+        "indices": [
+          117,
+          140
+        ]
+      }
+    ],
+    "user_mentions": [
+      {
+        "screen_name": "heybanco",
+        "name": "Hey Banco",
+        "id": 930934081466060800,
+        "id_str": "930934081466060800",
+        "indices": [
+          0,
+          9
+        ]
+      }
+    ],
+    "symbols": []
+  },
+  "favorited": false,
+  "retweeted": false,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "lang": "es",
+  "matching_rules": [
+    {
+      "tag": null
+    }
+  ]
+}
