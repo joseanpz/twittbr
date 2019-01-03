@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 
 from tweepy_ext.api import BRTweepyAPI
 from tweepy_ext.parsers import BRModelParser
+from db.store_procedures import add_tweet
 
 
 consumer_key = 'XRvAAgTcTcPid7HrwAlEyosQV'
@@ -26,6 +27,7 @@ def tweet_history(tweet):
             yield from tweet_history(in_reply_to_status)
         except Exception as e:
             print(e)
+    add_tweet(tweet)
     yield tweet
 
 
