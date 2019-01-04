@@ -21,6 +21,19 @@ class Tweet(db.Entity):
     created_at = orm.Required(datetime)
     text = orm.Required(str)
     truncated = orm.Required(bool)
+    in_reply_to_status_id = orm.Optional(str, nullable=True)
+    in_reply_to_user_id = orm.Optional(str, nullable=True)
+    in_reply_to_screen_name = orm.Optional(str, nullable=True)
+    entities = orm.Optional(orm.Json)
+    user = orm.Required('User')
+
+
+class User(db.Entity):
+    id = orm.PrimaryKey(str)
+    created_at = orm.Required(datetime)
+    name = orm.Required(str)
+    screen_name = orm.Required(str)
+    tweets = orm.Set(Tweet)
 
 
 db.bind(provider='sqlite', filename='C:/Users/BRM00000/dev/twitter/database.sqlite', create_db=True)

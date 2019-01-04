@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from tweepy_ext.api import BRTweepyAPI
 from tweepy_ext.parsers import BRModelParser
 from db.store_procedures import add_tweet
+from db.models import Tweet, orm
 
 
 consumer_key = 'XRvAAgTcTcPid7HrwAlEyosQV'
@@ -27,7 +28,11 @@ def tweet_history(tweet):
             yield from tweet_history(in_reply_to_status)
         except Exception as e:
             print(e)
-    add_tweet(tweet)
+    try:
+        add_tweet(tweet)
+    except Exception as e:
+        print(e)
+        raise StopIteration
     yield tweet
 
 
@@ -48,12 +53,12 @@ def tweet_histories(tweets_id_list, tweets_root_id_list, min_date, max_id=None):
         print(exc)
 
 
-def tweet_histories_premiere(tweets_id_list, tweets_root_id_list, max_results, from_date, to_date, next=None):
+def tweet_histories_premiere(query, tweets_id_list, tweets_root_id_list, max_results, from_date, to_date, next=None):
     try:
         if next:
             tweets = api.search_30day(
                 post_data={
-                    "query": "banregio",
+                    "query": query,
                     'fromDate': from_date,
                     'toDate': to_date,
                     'maxResults': max_results,
@@ -64,7 +69,7 @@ def tweet_histories_premiere(tweets_id_list, tweets_root_id_list, max_results, f
         else:
             tweets = api.search_30day(
                 post_data={
-                    "query": "banregio",
+                    "query": query,
                     'fromDate': from_date,
                     'toDate': to_date,
                     'maxResults': max_results
@@ -73,28 +78,32 @@ def tweet_histories_premiere(tweets_id_list, tweets_root_id_list, max_results, f
             )
 
         for tweet in tweets:
+            if hasattr(tweet, 'retweeted_status'):
+                tweet = tweet.retweeted_status
             if tweet.id in tweets_id_list:
                 continue
             new_history = [twt for twt in tweet_history(tweet)]
             tweets_id_list.extend([twt.id for twt in new_history])
             tweets_root_id_list.append({'id': tweet.id, 'created_at': tweet.created_at})
             yield new_history
-        if tweets.next:
-            yield from tweet_histories_premiere(tweets_id_list, tweets_root_id_list,
+        if tweets and tweets.next:
+            yield from tweet_histories_premiere(query, tweets_id_list, tweets_root_id_list,
                                                 max_results, from_date, to_date, tweets.next)
     except Exception as exc:
         print(exc)
 
 
 tweets_list = []
-tweets_id_list = []
+with orm.db_session:
+    tweets_id_list = list(orm.select(int(tweet.id) for tweet in Tweet)[:])  # []
 tweets_root_id_list = []
 histories = []
 min_date = datetime.utcnow() - timedelta(days=14)
 
+query = "banregio OR #banregio"
 max_results = 100
-from_date = (datetime.utcnow() - timedelta(days=3)).strftime("%Y%m%d%H%M")  # 60 - (60 * 24) * 7
-to_date = (datetime.utcnow() - timedelta(minutes=3)).strftime("%Y%m%d%H%M")    # / 60 - (60 * 24) * 3
+from_date = (datetime.utcnow() - timedelta(days=22)).strftime("%Y%m%d%H%M")  # 60 - (60 * 24) * 7
+to_date = (datetime.utcnow() - timedelta(days=18)).strftime("%Y%m%d%H%M")    # / 60 - (60 * 24) * 3
 
 
 
@@ -104,7 +113,7 @@ to_date = (datetime.utcnow() - timedelta(minutes=3)).strftime("%Y%m%d%H%M")    #
 max_id = None
 # max_id = 1076897728339136512 - 1
 
-for history in tweet_histories_premiere(tweets_id_list, tweets_root_id_list, max_results, from_date, to_date):
+for history in tweet_histories_premiere(query, tweets_id_list, tweets_root_id_list, max_results, from_date, to_date):
     print(history)
     histories.append(history)
 
