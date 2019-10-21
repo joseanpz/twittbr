@@ -7,7 +7,7 @@ cssselect==1.0.3
 fake-useragent==0.1.11
 idna==2.8
 lxml==4.2.5
-nltk==3.4
+nltk==3.4.5
 numpy==1.15.4
 oauthlib==2.1.0
 pandas==0.23.4
