@@ -32,6 +32,6 @@ tqdm==4.28.1
 tweepy==3.7.0
 tweet-parser==1.13.1
 twitter-scraper==0.3.0
-urllib3==1.24.1
+urllib3==1.26.5
 w3lib==1.19.0
 websockets==7.0
