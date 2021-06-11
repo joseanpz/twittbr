@@ -34,4 +34,4 @@ tweet-parser==1.13.1
 twitter-scraper==0.3.0
 urllib3==1.24.1
 w3lib==1.19.0
-websockets==7.0
+websockets==9.1
